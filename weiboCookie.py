@@ -11,12 +11,14 @@ driver.get('https://weibo.com')
 
 time.sleep(30)#间隔30s
 
+#用户名和密码用自己的替换
+
 driver.find_element_by_id('loginname').clear()#先清空数据
-driver.find_element_by_id('loginname').send_keys(name)#z再输入自己的用户名
+driver.find_element_by_id('loginname').send_keys(name)#z再输入自己的用户名name
 time.sleep(10)
 
 driver.find_element_by_name('password').clear()
-driver.find_element_by_name('password').send_keys(password)#密码
+driver.find_element_by_name('password').send_keys(password)#密码passsword
 time.sleep(10)
 
 # driver.find_elemenrt_by_xpath('//*[@id="pl_login_form"]/div/div[3]/div[5]/label').click()#记住登录 新浪微博默认是选中的
